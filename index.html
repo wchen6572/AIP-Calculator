@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Bonus Calculator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <div class = "HeaderBar">
         <div class= "Header">
@@ -22,54 +23,211 @@
 
 
 <body>
-
    
-    <div class= "Body">
+    <div class= "Calculation">
         <h2> Bonus Calculator</h2>
-        <hr>
+
         <form>
             <p>Pay Band</p>
-            <select>
-                <option value="100">100</option>
-                <option value="110">110</option>
-                <option value="120">120</option>
-                <option value="130">130</option>
-                <option value="140">140</option>
-                <option value="150">150</option>
-                <option value="160">160</option>
-                <option value="170">170</option>
-                <option value="180">180</option>
-                <option value="190">190</option>
+            <select id = "payBand">
+                <option value="0.04">100</option>
+                <option value="0.04">110</option>
+                <option value="0.04">120</option>
+                <option value="0.04">130</option>
+                <option value="0.05">140</option>
+                <option value="0.05">150</option>
+                <option value="0.06">160</option>
+                <option value="0.06">170</option>
+                <option value="0.08">180</option>
+                <option value="0.08">190</option>
 
               </select>
             <!-- <p><input id="field" name="name" type="text" placeholder="John Smith"> </p> -->
             <p>Salary</p>
-            <p><input id="field" name="name" type="number" placeholder="$XX,000"> </p>
+            <p><input id="salary" name="salary" type="number" placeholder="$XX,000"> </p>
             <p>OPI Calculation %</p>
-            <select>
-                <option value="50%">50%</option>
-                <option value="60%">60%</option>
-                <option value="70%">70%</option>
-                <option value="80%">80%</option>
+            <select id = "opiVal">
+                <option value="0.5">50%</option>
+                <option value="0.51">51%</option>
+                <option value="0.52">52%</option>
+                <option value="0.53">53%</option>
+                <option value="0.54">54%</option>
+                <option value="0.55">55%</option>
+                <option value="0.56">56%</option>
+                <option value="0.57">57%</option>
+                <option value="0.58">58%</option>
+                <option value="0.59">59%</option>
+                <option value="0.6">60%</option>
+                <option value="0.61">61%</option>
+                <option value="0.62">62%</option>
+                <option value="0.63">63%</option>
+                <option value="0.64">64%</option>
+                <option value="0.65">65%</option>
+                <option value="0.66">66%</option>
+                <option value="0.67">67%</option>
+                <option value="0.68">68%</option>
+                <option value="0.69">69%</option>
+                <option value="0.7">70%</option>
+                <option value="0.71">71%</option>
+                <option value="0.72">72%</option>
+                <option value="0.73">73%</option>
+                <option value="0.74">74%</option>
+                <option value="0.75">75%</option>
+                <option value="0.76">76%</option>
+                <option value="0.77">77%</option>
+                <option value="0.78">78%</option>
+                <option value="0.79">79%</option>
+                <option value="0.81">80%</option>
+                <option value="0.82">81%</option>
+                <option value="0.83">82%</option>
+                <option value="0.84">83%</option>
+                <option value="0.85">84%</option>
+                <option value="0.86">85%</option>
+                <option value="0.87">86%</option>
+                <option value="0.88">87%</option>
+                <option value="0.88">88%</option>
+                <option value="0.89">89%</option>
+                <option value="0.91">90%</option>
+                <option value="0.92">91%</option>
+                <option value="0.93">92%</option>
+                <option value="0.94">93%</option>
+                <option value="0.95">94%</option>
+                <option value="0.96">95%</option>
+                <option value="0.97">96%</option>
+                <option value="0.98">97%</option>
+                <option value="0.99">98%</option>
+                <option value="1.0">100%</option>
+                <option value="1.01">101%</option>
+                <option value="1.02">102%</option>
+                <option value="1.03">103%</option>
+                <option value="1.04">104%</option>
+                <option value="1.05">105%</option>
+                <option value="1.06">106%</option>
+                <option value="1.07">107%</option>
+                <option value="1.08">108%</option>
+                <option value="1.09">109%</option>
+                <option value="1.1">110%</option>
+                <option value="1.11">111%</option>
+                <option value="1.12">112%</option>
+                <option value="1.13">113%</option>
+                <option value="1.14">114%</option>
+                <option value="1.15">115%</option>
+                <option value="1.16">116%</option>
+                <option value="1.17">117%</option>
+                <option value="1.18">118%</option>
+                <option value="1.19">119%</option>
+                <option value="1.2">120%</option>
+                <option value="1.2">121%</option>
+                <option value="1.2">122%</option>
+                <option value="1.2">123%</option>
+                <option value="1.2">124%</option>
+                <option value="1.2">125%</option>
+                <option value="1.2">126%</option>
+                <option value="1.2">127%</option>
+                <option value="1.2">128%</option>
+                <option value="1.2">129%</option>
+                <option value="1.3">130%</option>
+                <option value="1.31">131%</option>
+                <option value="1.32">132%</option>
+                <option value="1.33">133%</option>
+                <option value="1.34">134%</option>
+                <option value="1.35">135%</option>
+                <option value="1.36">136%</option>
+                <option value="1.37">137%</option>
+                <option value="1.38">138%</option>
+                <option value="1.39">139%</option>
+                <option value="1.4">140%</option>
+                <option value="1.41">141%</option>
+                <option value="1.42">142%</option>
+                <option value="1.43">143%</option>
+                <option value="1.44">144%</option>
+                <option value="1.45">145%</option>
+                <option value="1.46">146%</option>
+                <option value="1.47">147%</option>
+                <option value="1.48">148%</option>
+                <option value="1.49">149%</option>
+                <option value="1.5">150%</option>
+
+
+
               </select>
             <p>Shared Service/ Department Lever</p>
-            <select>
-                <option value="Improved">Improved</option>
-                <option value="Delivered">Delivered</option>
-                <option value="Crushed">Crushed</option>
+            <select id = "deptLever">
+                <option value="0.8">Improved</option>
+                <option value="1.0">Delivered</option>
+                <option value="1.2">Crushed</option>
             </select>
 
             <p><input id="Button" type="submit" value="Submit"></p>
         </form>
+<!-- 
+        <p> Total Estimated Amount </p>
+        <p id = "estimatedTotal">$0.00</p> -->
+
+
     </div>
 
 
+
+
    <div class = "Footer">
-        <p id="Copy">Copyright &copy; <p>
+        
+                
+        <p id="Copy"> Copyright © 1996-2019 National Marrow Donor Program. All Rights Reserved. </p>
             <div id="bar">
             
             </div>
     </div>
+    <script>
+    $(document).ready(function() {
+
+
+    function CalculateTotal(){
+        salary = document.getElementById('salary').value;
+        payBand = document.getElementById('payBand').value;
+        opiVal = document.getElementById('opiVal').value;
+        deptLever = document.getElementById('deptLever').value;
+        
+
+        targetAmount = salary * payBand;
+        mystery1stNumber = targetAmount * opiVal * deptLever;
+        mystery2ndNumber = targetAmount * 1.5;
+
+            
+        if (deptLever === .08 && (mystery1stNumber > targetAmount))  {
+            totalBonus = targetAmount;
+            firstIf = targetAmount;
+
+        } 
+        else  {
+            totalBonus = mystery1stNumber;
+            firstIf = mystery1stNumber;
+        }
+
+
+        if (firstIf > mystery2ndNumber){
+            totalBonus = mystery2ndNumber
+        } else {
+            if (deptLever === .08 && (mystery1stNumber > targetAmount))  {
+                totalBonus = targetAmount;
+
+        } else {
+            totalBonus = mystery1stNumber;
+        }
+        }
+        totalBonus =  totalBonus.toFixed(2);
+        $("#estimatedTotal").text("$" + totalBonus);
+        alert("Total Estimated Bonus: " + totalBonus);
+
+    }
+    $('#Button').on('click', function(){
+        CalculateTotal();
+    });
+
+
+});
+
+    </script>
 
 </body>
 

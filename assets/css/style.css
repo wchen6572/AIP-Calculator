@@ -14,7 +14,7 @@ p, #field {
 }
 
 h2{
-    color:#4aaaa5;
+    color:#0079c1;
 }
 
 
@@ -47,22 +47,24 @@ h2{
     bottom:5px;
     text-align: center;
     width: 100%;
-    Height: 45px;
-    padding: 10px 10px 3px 10px;
-    vertical-align:bottom;
-    line-height: 45px;
+    Height: 30x;
+    padding: 10px 10px 5px 10px;
+    vertical-align:center;
+    font-size: 10x;
+    line-height: 10px;
     background-color: #666666;
 
 }
 
 #Copy{
-    color: #ffffff
+    color: #ffffff;
+    font-size: 10x;
 }
 
 #bar{
     
     position:absolute;
-    background-color: #4aaaa5;
+    background-color: #0079c1;
     height:10px;
     width:100%;
     top:0;
@@ -70,7 +72,7 @@ h2{
 
 #HeaderBox{
     position: absolute;
-    background-color: #4aaaa5;
+    background-color: #0079c1;
     text-align: center;
     vertical-align: middle;
     line-height: 5px;
@@ -81,8 +83,9 @@ h2{
     padding: 15px 15px 15px 15px;
 }
 
-.Body {
-    width: 920px;
+.Calculation {
+    
+    width: 950px;
     padding: 20px;
     height:100%;
     border:20px;
@@ -94,19 +97,25 @@ h2{
     overflow:auto;
 
 }
-#bio-image{
-    float:left;
-    margin: 0 20px 20px 20px;
-    width: 150px;
-    height:150px;
+.Total{
+    
+    width: 950px;
+    padding: 20px;
+    height:100%;
+    border:20px;
+    background: #ffffff;
+    margin: 20px auto;
+    border: 2px;
+    border-color: #cccccc;
+    
+    overflow:auto;
 }
 
-textarea{
-    width:920px;
 
-}
+
+
 input{
-    width:920px;
+    width:200px;
 }
 #Button{
     width:auto;
@@ -123,73 +132,11 @@ hr {
 }
 
 
-#Tile1{
-    float: left;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-image: url(../images/stars.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin: 20px;
-    
-}
-
-
-#Tile2{
-    float: left;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-image: url(../images/colors.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin:20px;
-}
-
-#Tile3{
-    float: left;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-image: url(../images/blur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin:20px;
-}
-
-#Tile4{
-    float: left;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-image: url(../images/alps.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin:20px;
-}
-
-#Tile5{
-    float: left;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-image: url(../images/wall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin:20px;
-}
-
 #Button{
     padding:10px;
     font-size: 20px;
     color:white;
-    background-color:#4aaaa5;
+    background-color:#0079c1;
 }
 
 #Button:hover{
@@ -205,7 +152,7 @@ hr {
     background: #4aaaa5;
 }
 
-#field{
+#salary{
     font-size:15px;
 }
 
